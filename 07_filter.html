@@ -1,0 +1,32 @@
+filter
+
+# |e 実体参照
+<pre>
+&lt;html&gt;
+    &lt;body id="main"&gt;&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+# |c コメント
+<!-- #main -->
+<div id="main">
+    <!-- .sub -->
+    <div class="sub">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <!-- /.sub -->
+</div>
+<!-- /#main -->
+
+# |s 一行に展開
+<ul><li></li><li></li><li></li></ul>
+
+# |haml Haml記法
+%html
+    %body
+        %div#main
+            %p
+            %p
+            %p

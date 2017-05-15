@@ -1,0 +1,29 @@
+Wrap with Abbreviation
+v_<C-y>,
+
+a[href="item2.html"]
+<ul>
+    <li>item1</li>
+    <li><a href="item2.html">item2</a></li>
+    <li>item3</li>
+</ul>
+
+ul>li*
+<ul>
+    <li>google.com</li>
+    <li>dotinstall.com</li>
+</ul>
+
+ul>li*|t trimしてくれる
+- google.com
+- dotinstall.com
+<ul>
+    <li>google.com</li>
+    <li>dotinstall.com</li>
+</ul>
+
+ul>li*>a[href="http://$#"]{$#}
+<ul>
+    <li><a href="http://google.com">google.com</a></li>
+    <li><a href="http://dotinstall.com">dotinstall.com</a></li>
+</ul>
